@@ -28,6 +28,14 @@ header {
   background-color: var(--main-background-color);
 }
 
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo-blue {
   color: var(--accent-color);
   font-family: Raleway;
@@ -78,7 +86,38 @@ p,
 /* ГЕРОЙ */
 .hero {
   background-color: var(--dark-background-color);
+  width: 1600px;
+  height: 600px;
+  text-align: center;
 }
+
+/* Hero Buttons */
+.hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+
+  min-width: 200px;
+  height: 50px;
+
+  border-style: none;
+  outline: none;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--text-hero);
+
+  background-color: var(--accent-color);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1px;
+}
+
 .hero-text {
   color: var(--text-hero);
   font-family: Roboto;
@@ -87,16 +126,6 @@ p,
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 0.06em;
-  text-align: center;
-}
-.hero-button {
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
 }
 
 /* преимущества */
