@@ -28,13 +28,19 @@ header {
   background-color: var(--main-background-color);
 }
 
-.container {
-  width: 1170px;
+/* NAV HEAD */
+.container-nav {
+  align-items: center;
+  display: inline;
+  display: flex;
+  width: 1200px;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+/* Logo */
 
 .logo-blue {
   color: var(--accent-color);
@@ -57,15 +63,28 @@ header {
   text-align: left;
 }
 
+/* NAV */
+.head-nav-link {
+  display: flex;
+  margin-left: 93px;
+}
+
+.head-nav-link .nav-li + .nav-li {
+  margin-left: 50px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   color: var(--text-color);
+
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  text-align: left;
 }
 
 .nav-link:focus,
@@ -73,9 +92,26 @@ header {
   color: var(--accent-color);
 }
 
-p,
+.head-add {
+  display: flex;
+  margin-left: auto;
+}
+
+.head-add .add-li + .add-li {
+  margin-left: 50px;
+}
+
 .add-link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   color: var(--sec-text-color);
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .add-link:focus,
@@ -86,15 +122,31 @@ p,
 /* ГЕРОЙ */
 .hero {
   background-color: var(--dark-background-color);
+
+  margin-left: auto;
+  margin-right: auto;
   width: 1600px;
-  height: 600px;
+
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
+.hero-text {
+  color: var(--text-hero);
+
+  font-family: Roboto;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+}
 /* Hero Buttons */
 .hero-button {
   display: inline-block;
   padding: 10px 32px;
+  margin-top: 30px;
 
   min-width: 200px;
   height: 50px;
@@ -118,18 +170,26 @@ p,
   line-height: 1px;
 }
 
-.hero-text {
-  color: var(--text-hero);
-  font-family: Roboto;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 60px;
-  letter-spacing: 0.06em;
+/* преимущества */
+.main-best-ul {
+  display: flex;
+  width: 1200px;
 }
 
-/* преимущества */
-.best {
+.main-best-ul .main-best-li + .main-best-li {
+  margin-left: 30px;
+}
+
+.main-best-ul {
+  padding-top: 94px;
+  align-items: center;
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -137,6 +197,13 @@ p,
   line-height: 16px;
   letter-spacing: 0.03em;
   text-align: left;
+}
+
+.main-best-li {
+  width: 270px;
+}
+p {
+  color: var(--sec-text-color);
 }
 
 .best-text {
@@ -149,7 +216,17 @@ p,
   text-align: left;
 }
 /* чем занимаемся */
+
+.wwd-section {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .wwd {
+  padding-top: 94px;
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
@@ -159,8 +236,50 @@ p,
   text-align: center;
 }
 
+.wwd-img-ul {
+  display: flex;
+  padding-left: 0px;
+  padding-top: 50px;
+}
+
+.wwd-img-li {
+  margin-right: 30px;
+}
+.wwd-img-li:last-child {
+  margin-right: 0px;
+}
 /* наша команда */
+
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--sec-background-color);
+}
+
+.team-ul {
+  padding-top: 50px;
+  display: flex;
+  padding-left: 0px;
+}
+
+.team-li {
+  height: 368px;
+  background-color: var(--main-background-color);
+  margin-right: 30px;
+}
+
+.team-li:last-child {
+  margin-right: 0px;
+}
+
 .team {
+  padding-top: 94px;
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
@@ -247,6 +366,30 @@ footer {
 }
 
 /* Портфолио */
+.photo-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.photo-ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.photo-element {
+  width: 370px;
+  margin-right: 30px;
+}
+
+.photo-element:nth-child(3n) {
+  margin-right: 0px;
+}
+.photo-element:nth-last-child(n-3) {
+  margin-bottom: 0px;
+}
 
 .name-project {
   color: var(--text-color);
