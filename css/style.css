@@ -7,7 +7,7 @@
   --text-color: #212121;
   --text-hero: #ffffff;
   --sec-text-color: #757575;
-  --footer-addres: ;
+  --portfolio-buttons: #f5f4fa;
 }
 
 body {
@@ -23,13 +23,9 @@ a {
   font-style: normal;
 }
 
-/* Header */
-header {
-  background-color: var(--main-background-color);
-}
-
-/* NAV HEAD */
+/* HEADER */
 .container-nav {
+  background-color: var(--main-background-color);
   align-items: center;
   display: inline;
   display: flex;
@@ -143,8 +139,8 @@ header {
   letter-spacing: 0.06em;
 }
 /* Hero Buttons */
+
 .hero-button {
-  display: inline-block;
   padding: 10px 32px;
   margin-top: 30px;
 
@@ -158,9 +154,8 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px;
-  color: var(--text-hero);
 
+  color: var(--text-hero);
   background-color: var(--accent-color);
 
   border: 1px solid transparent;
@@ -308,9 +303,23 @@ p {
   text-align: center;
 }
 
-/* футер */
+/* FOOTER */
+
 footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
   background-color: var(--dark-background-color);
+}
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
+
+.footer-ul {
+  padding-left: 0px;
 }
 
 .addres {
@@ -365,8 +374,65 @@ footer {
   text-align: left;
 }
 
-/* Портфолио */
+/* PORTFOLIO BUTTONS */
+
+.portfolio-buttons-section {
+  padding-top: 94px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-buttons-ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+}
+.portfolio-buttons-li {
+  padding-right: 8px;
+}
+
+.portfolio-buttons-li:last-child {
+  padding-right: 0px;
+}
+
+.portfolio-button {
+  min-width: 145px;
+  height: 38px;
+
+  border-style: none;
+  outline: none;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+
+  color: var(--text-color);
+  background-color: var(--portfolio-buttons);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 26px;
+}
+.portfolio-button:focus,
+.portfolio-button:hover {
+  color: var(--main-background-color);
+}
+
+.portfolio-button:focus,
+.portfolio-button:hover {
+  background-color: var(--accent-color);
+}
+
+/* PORTFOLIO PHOTO */
 .photo-container {
+  padding-top: 34px;
+  padding-bottom: 94px;
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
