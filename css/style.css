@@ -35,6 +35,7 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 1px solid #eeeeee;
 }
 /* Logo */
 
@@ -121,7 +122,7 @@ a {
 
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
+  max-width: 1600px;
 
   text-align: center;
   padding-top: 200px;
@@ -166,24 +167,21 @@ a {
 }
 
 /* преимущества */
-.main-best-ul {
-  display: flex;
-  width: 1200px;
-}
 
 .main-best-ul .main-best-li + .main-best-li {
   margin-left: 30px;
 }
 
 .main-best-ul {
-  padding-top: 94px;
-  align-items: center;
   display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  padding-top: 94px;
+  align-items: center;
 
   font-family: Roboto;
   font-size: 14px;
@@ -210,10 +208,11 @@ p {
   letter-spacing: 0.03em;
   text-align: left;
 }
+
 /* чем занимаемся */
 
 .wwd-section {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -249,11 +248,12 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
   background-color: var(--sec-background-color);
 }
 
@@ -306,16 +306,14 @@ p {
 /* FOOTER */
 
 footer {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
-  background-color: var(--dark-background-color);
-}
-
-.footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 215px;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background-color: var(--dark-background-color);
 }
 
 .footer-ul {
@@ -399,7 +397,7 @@ footer {
 }
 
 .portfolio-button {
-  min-width: 145px;
+  min-width: 128px;
   height: 38px;
 
   border-style: none;
@@ -448,13 +446,17 @@ footer {
 .photo-element {
   width: 370px;
   margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.Portfolio-text {
+  padding: 20px 24px;
 }
 
 .photo-element:nth-child(3n) {
   margin-right: 0px;
-}
-.photo-element:nth-last-child(n-3) {
-  margin-bottom: 0px;
 }
 
 .name-project {
