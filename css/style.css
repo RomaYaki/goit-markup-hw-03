@@ -416,13 +416,18 @@ footer {
 
 /* PORTFOLIO BUTTONS */
 
-.portfolio-buttons-section {
+.portfolio-container {
   padding-top: 94px;
+  padding-bottom: 94px;
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.portfolio-buttons-section {
+  padding-bottom: 50px;
 }
 
 .portfolio-buttons-ul {
@@ -469,15 +474,7 @@ footer {
 }
 
 /* PORTFOLIO PHOTO */
-.photo-container {
-  padding-top: 34px;
-  padding-bottom: 94px;
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .photo-ul {
   display: flex;
   flex-wrap: wrap;
