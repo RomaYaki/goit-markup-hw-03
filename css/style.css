@@ -132,6 +132,7 @@ header {
 }
 
 /* ГЕРОЙ */
+
 .hero {
   background-color: var(--dark-background-color);
 
@@ -186,13 +187,15 @@ header {
 /* преимущества */
 
 .best-section {
+  padding-top: 94px;
+}
+
+.best-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  padding-top: 94px;
   align-items: center;
 }
 
@@ -238,12 +241,15 @@ p {
 /* чем занимаемся */
 
 .wwd-section {
+  padding-top: 94px;
+}
+
+.wwd-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
 }
 
 .wwd {
@@ -269,16 +275,15 @@ p {
 .wwd-img-li:last-child {
   margin-right: 0px;
 }
-/* наша команда */
 
-.team-text {
-  margin: 0;
-  padding-top: 94px;
-}
+/* TEAM */
 
 .team-section {
   padding-bottom: 94px;
   margin-top: 94px;
+}
+
+.team-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -286,6 +291,22 @@ p {
   margin-right: auto;
 
   background-color: var(--sec-background-color);
+}
+
+.team-text {
+  margin: 0;
+  padding-top: 94px;
+}
+
+.team {
+  padding: 0px;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team-ul {
@@ -306,17 +327,6 @@ p {
 
 .team-li:last-child {
   margin-right: 0px;
-}
-
-.team {
-  padding: 0px;
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-  text-align: center;
 }
 
 .name {
@@ -340,14 +350,14 @@ p {
 
 /* FOOTER */
 
-footer {
+.footer-section {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
   background-color: var(--dark-background-color);
 }
 
-.footer-section {
+.footer-container {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -422,9 +432,12 @@ footer {
 
 /* PORTFOLIO BUTTONS */
 
-.portfolio-container {
+.portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.portfolio-container {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
